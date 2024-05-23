@@ -1,0 +1,55 @@
+
+.titulo{
+    color: #0B090D;
+    font-family: 'Staatliches', cursive; ;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.navegacion{
+    text-align: center;
+    background-color: #3F3F40;
+    padding: 1.5rem;
+}
+.items{
+    margin: 1rem;
+    text-decoration: none;
+    color: #D9D5D2;
+}
+.items:hover{
+    color: #088C37;
+    font-size: 1.3rem;
+    timeline-scope: 2;
+}
+.espacio_tiempo{
+    text-align: center;
+}
+p{
+    color: #0B090D;
+
+}
+  .time{
+    color: #088C37;
+  }
+  button {
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  button:hover {background-color: #3e8e41}
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

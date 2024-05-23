@@ -1,1 +1,21 @@
-<p>formulario works!</p>
+
+<div class="contenedor">
+    <label class="texto">Titulo</label>
+    <br/>
+    <input type="text" id="txtTitle" name="txtTitle" 
+    [(ngModel)]="message.titulo"/><br/>
+    <label for="txtMsg" class="texto">Mensaje</label>
+    <br/>
+    <textarea cols="50" rows="7" id="txtMsg" name="txtMsg"
+    [(ngModel)]="message.msg"></textarea> <!--name: Para comunicar con la logica-->
+    <br/>
+    <button (click)="guardar()" class="agregar">Guardar</button>
+    <button (click)="eliminar()" class="eliminar">Eliminar</button>
+    <p>Mensajes</p>
+    <br/>
+    <select>
+        @for(msg of messages; track msg.id){
+            <option><strong>{{msg.title}}</strong> <span>{{msg.msg}}</span></option>
+        }
+    </select>
+</div>
